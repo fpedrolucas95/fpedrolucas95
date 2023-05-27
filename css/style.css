@@ -839,22 +839,28 @@ h6 {
 
 /* Para telas de celulares */
 @media (max-width: 576px) {
-  /* Modifique os estilos aqui para celulares */
+  /* Estilos otimizados para celulares */
 
   .container {
     padding: 0 10px;
   }
 
-  ul.nav-menu {
+  .nav-menu {
     display: none;
   }
 
+  .home-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .home-txt a {
-    display: none;
+    display: inline-block;
     margin-bottom: 20px;
-    justify-content: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px; /* Tamanho da fonte aumentado para melhor legibilidade */
     text-transform: uppercase;
     color: #ffffff;
     background: #ea4020;
@@ -863,74 +869,42 @@ h6 {
     border-radius: 5px;
   }
 
-  .home-txt span {
-    display: none;
-  }
-
-  .home-txt h1 {
-    display: none;
-  }
-
-  .home-txt h2 {
-    display: none;
-  }
-
-  .home-txt p {
-    display: none;
-  }
-
-  .home-img-border {
-    display: relative;
-    justify-content: center;
-  }
-
   .title h1 {
-    font-size: 24px;
+    font-size: 28px; /* Tamanho do título aumentado para destaque */
+  }
+
+  .home-txt h1::after {
+    display: none;
   }
 
   ul.home-social {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    top: 10px;
-  }
-
-  ul.experience-box li {
-    width: 100%;
-  }
-
-  .ex-date {
     display: none;
   }
 
-  .portfolio-img {
-    width: 150px;
-    display: flex;
-    position: relative;
-  }
-
-  .portfolio-img img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  button.slider-btn {
+  .home-img,
+  .home-img-border {
     display: none;
+  }
+
+  .experience-box li {
+    width: 100%;
   }
 
   .portfolio-box {
     width: 320px;
-    height: 250px;
-    border: 1px solid;
-    border-color: #e2e8f0;
+    height: auto; /* Altura ajustada automaticamente */
+    border: 1px solid #e2e8f0;
     margin-bottom: 20px;
     display: flex;
+    flex-direction: column; /* Direção da flexbox alterada para coluna */
     border-radius: 8px;
     box-shadow: 0 6px 22px 0 rgba(140, 152, 164, 0.1);
+    position: relative;
   }
 
   .portfolio-details {
-    padding: 20px;
+    margin-left: 10px;
+    padding-bottom: 10px; /* Padding adicionado para espaço extra na parte inferior */
   }
 
   .portfolio-details h4 {
@@ -942,17 +916,20 @@ h6 {
   .portfolio-details p {
     color: #292929;
     font-size: 16px;
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
 
   .portfolio-details span {
     padding: 8px 15px;
-    border: 1px solid;
-    border-color: #e2e8f0;
+    border: 1px solid #e2e8f0;
     border-radius: 40px;
     font-size: 15px;
     display: inline-block;
     transition: 0.4s;
+  }
+
+  .slider-btn {
+    display: none;
   }
 
   .portfolio-items {
@@ -961,10 +938,17 @@ h6 {
     justify-content: space-between;
   }
 
-  .portfolio-details span:hover {
-    border-color: rgba(41, 41, 41, 0.4);
+  .portfolio-img img {
+    width: 127%;
   }
-  button.slider-btn:hover {
+
+  .ex-date {
+    display: none;
+  }
+
+  .portfolio-details span:hover,
+  .slider-btn:hover {
+    border-color: rgba(41, 41, 41, 0.4);
     background: #292929;
   }
 }
