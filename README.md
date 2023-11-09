@@ -1,5 +1,44 @@
+# Welcome to My GitHub Profile!
 
-# 🌐 Redes sociais:
+📬 Reach out to me at: [francadev.com.br](https://www.francadev.com.br) or [fpedrolucas95@gmail.com](mailto:fpedrolucas95@gmail.com)
+
+📌 Brasília, DF, BR | ✈️ Open to traveling and relocation
+
+"Embracing challenges and continuously improving my skillset to deliver innovative and efficient technological solutions."
+
+### About Me
+👨‍💻 A passionate **Systems Analyst** with diverse professional experiences ranging from administrative support to business analysis. I've managed to yield over 1 million in revenue through meticulous administrative and financial management. My time as a Junior Business Analyst at Globalweb Outsourcing in Brazil involved hands-on work with hospital systems, bringing efficient technological solutions to complex environments.
+
+🎓 Currently expanding my expertise with a **Postgraduate degree in Artificial Intelligence and Data Science**.
+
+### Professional Synopsis
+- **Customer Support Analyst** at Beedoo AI Learning (Current Role)
+- **Administrative Financial Assistant** at Hospital de Olhos Macrovisão, spearheading administrative strategies that significantly increased revenue.
+- **Junior Business Analyst** at Globalweb Outsourcing do Brasil, enhancing hospital systems efficiency for EBSERH networked University Hospitals.
+
+### Technical Proficiency
+- **Advanced**: Support, Windows
+- **Intermediate**: CSS, HTML, Javascript, Linux, Photoshop, Python, Excel
+- **Basic**: Corel, Django, Flask, Java
+
+### Academic Background
+- **Postgraduate** in AI and Data Science (In progress)
+- **Bachelor's** in Systems Analysis and Development
+
+### Projects
+Check out my [repositories](https://github.com/fpedrolucas95?tab=repositories) where I apply innovative solutions to real-world problems. My projects range from web development to data analysis, reflecting my continuous learning and adaptability in tech.
+
+### Certifications and Courses
+- **Scrum Foundation Professional Certificate**
+- **Developing REST APIs with Python and Flask**
+- **Web Development with Python and Django**
+
+### Languages
+- **Brazilian Portuguese**: Native
+- **English**: Intermediate
+
+
+# 🌐 Social Networks:
 [![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://www.francadev.com.br) [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/fpedrolucas95) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/fpedrolucas95) 
 
 # 💻 Tech Stack:
@@ -7,5 +46,3 @@
 
 ---
 [![](https://visitcount.itsvg.in/api?id=fpedrolucas95&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
