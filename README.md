@@ -30,9 +30,9 @@
 Check out my [repositories](https://github.com/fpedrolucas95?tab=repositories) where I apply innovative solutions to real-world problems. My projects range from web development to data analysis, reflecting my continuous learning and adaptability in tech.
 
 ### Certifications and Courses
-- **Scrum Foundation Professional Certificate**
-- **Developing REST APIs with Python and Flask**
-- **Web Development with Python and Django**
+- **Scrum Foundation Professional Certificate** - CertiProf
+- **Developing REST APIs with Python and Flask** - DIO
+- **Web Development with Python and Django** - DIO
 
 ### Languages
 - **Brazilian Portuguese**: Native
