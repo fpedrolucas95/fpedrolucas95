@@ -20,7 +20,7 @@
 ### Technical Proficiency
 - **Advanced**: Support, Windows
 - **Intermediate**: CSS, HTML, Javascript, Linux, Photoshop, Python, Excel
-- **Basic**: Corel, Django, Flask, Java
+- **Basic**: Corel, Django, Flask, Java, FastAPI, Selenium, Pytorch
 
 ### Academic Background
 - **Postgraduate** in AI and Data Science (In progress)
