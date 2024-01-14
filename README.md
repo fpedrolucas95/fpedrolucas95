@@ -13,7 +13,7 @@
 🎓 Currently expanding my expertise with a **Postgraduate degree in Artificial Intelligence and Data Science**.
 
 ### Professional Synopsis
-- **Customer Support Analyst** at Beedoo AI Learning (Current Role)
+- **.NET MAUI, C# Developer** at BTG Pactual (current role)
 - **Administrative Financial Assistant** at Hospital de Olhos Macrovisão, spearheading administrative strategies that significantly increased revenue.
 - **Junior Business Analyst** at Globalweb Outsourcing do Brasil, enhancing hospital systems efficiency for EBSERH networked University Hospitals.
 
