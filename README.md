@@ -33,7 +33,7 @@ Check out my [repositories](https://github.com/fpedrolucas95?tab=repositories) w
 
 ### Languages
 - **Brazilian Portuguese**: Native
-- **English**: Intermediate
+- **English**: Intermediate - EF SET Score (C1 Advanced)
 
 
 # 🌐 Social Networks:
