@@ -1,7 +1,7 @@
 # Welcome to My GitHub Profile!
 ![](https://komarev.com/ghpvc/?username=fpedrolucas95)
 
-📬 Reach out to me at: [francadev.com.br](https://www.francadev.com.br) or [fpedrolucas95@gmail.com](mailto:fpedrolucas95@gmail.com)
+📬 Reach out to me at: [fpedrolucas95@gmail.com](mailto:fpedrolucas95@gmail.com)
 
 📌 Brasília, DF, BR | ✈️ Open to traveling and relocation
 
@@ -12,12 +12,11 @@ I'm a technology enthusiast and innovation-driven developer, with experience in 
 
 ### Professional Synopsis
 - **.NET MAUI, C# Developer** at BTG Pactual (current role)
-- **Python Backend Developer, Co-Founder** at Data Plus Corporation (current role)
 
 ### Technical Proficiency
 - **Advanced**: Support, Windows
-- **Intermediate**: CSS, HTML, Javascript, Linux, Photoshop, Python, Excel, C#, .NET
-- **Basic**: Corel, Django, Flask, Java, FastAPI, Selenium, Pytorch, Azure, Docker, Tensorflow, Pytorch, Pandas
+- **Intermediate**: CSS, HTML, Javascript, Linux, Photoshop, Python, Excel, C#, .NET, Tensorflow, Pytorch, Pandas
+- **Basic**: Corel, Django, Flask, Java, FastAPI, Selenium, Pytorch, Azure, Docker, 
 
 ### Academic Background
 - **Postgraduate** in AI and Data Science (In progress)
@@ -27,6 +26,7 @@ I'm a technology enthusiast and innovation-driven developer, with experience in 
 Check out my [repositories](https://github.com/fpedrolucas95?tab=repositories) where I apply innovative solutions to real-world problems. My projects range from web development to data analysis, reflecting my continuous learning and adaptability in tech.
 
 ### Certifications and Courses
+- **.Net Developer Formation** - DIO
 - **Scrum Foundation Professional Certificate** - CertiProf
 - **Developing REST APIs with Python and Flask** - DIO
 - **Web Development with Python and Django** - DIO
