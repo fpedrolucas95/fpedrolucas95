@@ -1,159 +1,167 @@
 // Aqui também? Tem problema não, fica a vontade!
 // Mas... você já achou o easter egg na home?
 
+// ============================================================
+// Typing Effect
+// ============================================================
 (function () {
-  const words = [
-    "sou habilidoso em programar",
-    "sou bom em identificar informações-chave",
-    "sei promover produtos e serviços nos meios digitais",
-    "encontro soluções para problemas",
-  ];
+    const words = [
+        "sou Desenvolvedor .NET | C# | MAUI",
+        "trabalho com APIs RESTful e WebSocket",
+        "integro IA e Automação em software",
+        "aplico Clean Code e arquitetura DDD",
+    ];
 
-  // Embaralha as palavras para garantir uma ordem aleatória
-  words.sort(() => Math.random() - 0.5);
+    words.sort(() => Math.random() - 0.5);
 
-  let currentIndex = 0;
-  let text = document.querySelector("#type-it");
-  let counter = 0;
-  let stepInterval = null;
-  let delInterval = null;
-  let delTimeout = null;
-  const typingSpeed = 60; // velocidade de digitação
-  const deletingSpeed = 50; // velocidade de deleção
+    let currentIndex = 0;
+    const text = document.querySelector("#type-it");
+    let counter = 0;
+    let stepInterval = null;
+    let delInterval = null;
+    let delTimeout = null;
+    const typingSpeed = 55;
+    const deletingSpeed = 35;
 
-  function delIntervalCallback() {
-    delInterval = setInterval(del, deletingSpeed);
-    clearTimeout(delTimeout);
-  }
-
-  function del() {
-    if (counter === 0) {
-      currentIndex = (currentIndex + 1) % words.length;
-      if (currentIndex === 0) {
-        words.sort(() => Math.random() - 0.5); // re-embaralha as palavras após todas terem sido exibidas
-      }
-      clearInterval(delInterval);
-      stepInterval = setInterval(step, typingSpeed);
-    } else {
-      text.textContent = text.textContent.slice(0, -1);
-      counter--;
+    function delIntervalCallback() {
+        delInterval = setInterval(del, deletingSpeed);
+        clearTimeout(delTimeout);
     }
-  }
 
-  function step() {
-    if (counter >= words[currentIndex].length) {
-      clearInterval(stepInterval);
-      delTimeout = setTimeout(delIntervalCallback, 2000);
-    } else {
-      text.textContent += words[currentIndex][counter];
-      counter++;
+    function del() {
+        if (counter === 0) {
+            currentIndex = (currentIndex + 1) % words.length;
+            if (currentIndex === 0) {
+                words.sort(() => Math.random() - 0.5);
+            }
+            clearInterval(delInterval);
+            stepInterval = setInterval(step, typingSpeed);
+        } else {
+            text.textContent = text.textContent.slice(0, -1);
+            counter--;
+        }
     }
-  }
 
-  stepInterval = setInterval(step, typingSpeed);
+    function step() {
+        if (counter >= words[currentIndex].length) {
+            clearInterval(stepInterval);
+            delTimeout = setTimeout(delIntervalCallback, 2500);
+        } else {
+            text.textContent += words[currentIndex][counter];
+            counter++;
+        }
+    }
+
+    stepInterval = setInterval(step, typingSpeed);
 })();
 
-// Adicionando o JavaScript para adicionar e remover a classe "shadow" do menu quando a página rola
-window.onscroll = function () {
-  scrollFunction();
-};
+// ============================================================
+// Navigation: scroll effects + active link
+// ============================================================
+const navbar = document.getElementById("navbar");
+const btnTopo = document.getElementById("btnTopo");
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
 
-function scrollFunction() {
-  const nav = document.querySelector("nav");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    nav.classList.add("shadow");
-  } else {
-    nav.classList.remove("shadow");
-  }
+function updateActiveLink() {
+    let current = "";
+    sections.forEach((section) => {
+        if (window.scrollY >= section.offsetTop - 100) {
+            current = section.getAttribute("id");
+        }
+    });
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+        }
+    });
 }
 
-// Portfolio Lightbox
-const portfolioBoxBtn = document.querySelectorAll(".portfolio-box .slider-btn");
-const totalPortfolioBoxBtn = portfolioBoxBtn.length;
-const portfolioBox = document.querySelectorAll(".portfolio-box");
-const totalPortfolioBox = portfolioBox.length;
-const lightbox = document.querySelector(".lightbox");
-const lightboxImg = lightbox.querySelector(".lightbox-img");
-const lightboxClose = lightbox.querySelector(".lightbox-close");
+window.addEventListener("scroll", function () {
+    // Navbar shadow
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
 
+    // Back-to-top button
+    if (window.scrollY > 300) {
+        btnTopo.style.display = "flex";
+    } else {
+        btnTopo.style.display = "none";
+    }
+
+    updateActiveLink();
+});
+
+// ============================================================
+// Hamburger menu
+// ============================================================
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", function () {
+    hamburger.classList.toggle("open");
+    navMenu.classList.toggle("open");
+});
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+        hamburger.classList.remove("open");
+        navMenu.classList.remove("open");
+    });
+});
+
+// ============================================================
+// Back to top
+// ============================================================
+btnTopo.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// ============================================================
+// Portfolio Lightbox
+// ============================================================
+const portfolioCards = document.querySelectorAll(".portfolio-card");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxClose = document.getElementById("lightbox-close");
 let itemIndex = 0;
 
-for (let i = 0; i < totalPortfolioBox; i++) {
-  (function (index) {
-    portfolioBoxBtn[index].addEventListener("click", function () {
-      itemIndex = index;
-      toggleLightbox();
-      changeItem();
-    });
-    portfolioBox[index].addEventListener("click", function () {
-      itemIndex = index;
-    });
-  })(i);
-}
-
 function toggleLightbox() {
-  lightbox.classList.toggle("open");
+    lightbox.classList.toggle("open");
 }
 
 function changeItem() {
-  const imgSrc = portfolioBox[itemIndex]
-    .querySelector(".portfolio-img img")
-    .getAttribute("src");
-  lightboxImg.src = imgSrc;
+    const imgEl = portfolioCards[itemIndex].querySelector(".portfolio-card-img img");
+    if (imgEl) lightboxImg.src = imgEl.getAttribute("src");
 }
 
 function prevItem() {
-  itemIndex = (itemIndex - 1 + totalPortfolioBox) % totalPortfolioBox;
-  changeItem();
+    itemIndex = (itemIndex - 1 + portfolioCards.length) % portfolioCards.length;
+    changeItem();
 }
 
 function nextItem() {
-  itemIndex = (itemIndex + 1) % totalPortfolioBox;
-  changeItem();
+    itemIndex = (itemIndex + 1) % portfolioCards.length;
+    changeItem();
 }
 
-lightboxClose.addEventListener("click", function () {
-  closeLightbox();
-});
-
-function closeLightbox() {
-  toggleLightbox();
+if (lightboxClose) {
+    lightboxClose.addEventListener("click", toggleLightbox);
 }
 
-lightboxImg.addEventListener("click", function (event) {
-  itemIndex = (itemIndex + 1) % totalPortfolioBox;
-  changeItem();
-});
-
-lightbox.addEventListener("click", function (event) {
-  if (event.target == lightbox) {
-    closeLightbox();
-  }
-});
-
-document.addEventListener("keydown", function (event) {
-  if (event.key == "Escape") {
-    closeLightbox();
-  }
-});
-
-// Quando o usuário rolar 20px para baixo a partir do topo do documento, mostre o botão
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btnTopo").style.display = "block";
-  } else {
-    document.getElementById("btnTopo").style.display = "none";
-  }
+if (lightbox) {
+    lightbox.addEventListener("click", function (e) {
+        if (e.target === lightbox) toggleLightbox();
+    });
 }
 
-// Quando o usuário clicar no botão, role para o topo do documento
-document.getElementById("btnTopo").addEventListener("click", topFunction);
-
-function topFunction() {
-  document.body.scrollTop = 0; // Para o Safari
-  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
-}
+document.addEventListener("keydown", function (e) {
+    if (!lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") toggleLightbox();
+    if (e.key === "ArrowLeft") prevItem();
+    if (e.key === "ArrowRight") nextItem();
+});

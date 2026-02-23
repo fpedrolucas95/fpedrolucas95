@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!---- 
-    It's dangerous to go
-      alone! Take this. 
-      
-      ️‍🔥     👴     🔥
+<!--
+  It's dangerous to go
+    alone! Take this.
 
-             ⚔️    
+    ️‍🔥     👴     🔥
+
+           ⚔️
 
   Não é somente código que constrói esta teia.
   A arquitetura virtual se entrelaça em linhas de mistério.
@@ -18,13 +18,14 @@
   Em seguida, sob o véu da criptografia se ocultou.
   Decifre o enigma para ver o que está por vir,
   Siga os passos dos sábios, encontre a chave, deixe o segredo descoberto.
----->
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Lucas França</title>
+    <meta name="description" content="Pedro Lucas França — Desenvolvedor .NET | C# | MAUI | Python | GenAI. Especialista em aplicações desktop, APIs RESTful e integração FinTech.">
+    <title>Pedro Lucas França — Desenvolvedor .NET</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
@@ -34,461 +35,589 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-SK0KP1NHCL');
     </script>
 </head>
 
 <body>
-    <main>
-        <nav>
-            <div class="container d-flex justify-space-between">
-                <h1 class="logo">Pedro</h1>
-                <ul class="nav-menu d-flex">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#services">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfólio</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                    <li>
 
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="home" id="home">
-            <div class="container d-flex justify-space-between">
-                <div class="home-txt">
-                    <span>Olá, meu nome é</span>
-                    <h1>Pedro Lucas França</h1>
-                    <h2>E<span id="type-it"></span></h2>
-                    <p>Desenvolvedor apaixonado por programação, especialista em análise e gestão de marketing digital.
-                        Pronto para enfrentar desafios com determinação e entregar resultados excepcionais.</p>
-                    <p>Vamos trabalhar juntos?</p>
-                    <a href="https://api.whatsapp.com/send?phone=5561983637591&text=Oi,%20cheguei%20aqui%20pelo%20site."
-                        target="_blank">Converse comigo no WhatsApp</a>
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="logo">Pedro<span class="logo-dot">.</span></a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#trajetoria" class="nav-link">Trajetória</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="hero-greeting">Olá, meu nome é</span>
+                    <h1 class="hero-name">Pedro Lucas França</h1>
+                    <h2 class="hero-title">E<span id="type-it"></span></h2>
+                    <p class="hero-description">
+                        Desenvolvedor .NET com foco em aplicações desktop (.NET MAUI, WPF),
+                        APIs RESTful, microserviços e integração de sistemas financeiros.
+                        Apaixonado por Clean Code, DDD e por aplicar IA e automação
+                        para elevar a qualidade das entregas.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="https://api.whatsapp.com/send?phone=5561983637591&text=Oi,%20cheguei%20aqui%20pelo%20site."
+                            target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline">Ver Projetos</a>
+                    </div>
+                    <ul class="hero-social">
+                        <li>
+                            <a href="https://www.linkedin.com/in/fpedrolucas95" target="_blank" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/fpedrolucas95" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:fpedrolucas95@gmail.com" aria-label="E-mail">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="home-img-border">
-                    <div class="home-img">
-                        <img src="img/profile.jpg" alt="">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image">
+                        <img src="img/profile.jpg" alt="Pedro Lucas França">
                     </div>
                 </div>
             </div>
-            <ul class="home-social">
-                <li>
-                    <a href="https://www.linkedin.com/in/fpedrolucas95" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/fpedrolucas95" target="_blank"><i
-                            class="fa-brands fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="mailto:fpedrolucas95@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                </li>
-            </ul>
-            <div class="btm-svg">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
-                    <path fill="#f7f6ff" d="">
-                        <animate attributeName="d" begin="0s" dur="10s" repeatCount="indefinite" values="
-                      M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;
-                      M0,40 C200,40 400,0 600,0 C800,0 800,40 1000,40 L1000,50 L0,50 L0,40 Z;
-                      M0,30 C200,30 200,0 400,0 C600,0 800,40 1000,40 L1000,50 L0,50 L0,30 Z;
-                      M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
-                    </path>
+            <div class="hero-wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+                    <path fill="#f8fafc" d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" />
                 </svg>
             </div>
         </section>
-        <section class="about" id="about">
-            <div class="container">
-                <div class="title">
-                    <h1 class="m-0">Sobre</h1>
-                </div>
-                <div class="d-flex justify-space-between align-flex-end">
-                    <div class="about-img d-flex">
-                        <img src="img/sobre.jpg" alt="">
-                    </div>
-                    <div class="about-contents">
-                        <div class="content-items">
-                            <span class="content-title">Sobre mim</span>
-                            <p class="bold">Olá, meu nome é <span class="border-btm">Pedro Lucas França</span> e eu sou
-                                um <span class="border-btm">Desenvolvedor</span>, <span
-                                    class="border-btm">Designer</span> e <span class="border-btm">Gestor de
-                                    Tráfego</span>
-                            </p>
-                            <p>Sou formado em Análise e Desenvolvimento de Sistemas, tenho experiência em diversas
-                                áreas, desde assistente administrativo até analista de negócios. Também sou especialista
-                                em marketing digital, com sucesso em campanhas que geraram mais de 1 milhão de reais de
-                                faturamento. Estou sempre buscando desafios para aprimorar minhas habilidades e trazer
-                                resultados incríveis. Vamos juntos nessa jornada tecnológica?</p>
-                        </div>
-                        <div class="content-items">
-                            <span class="content-title">Linguagens de Programação</span>
-                            <ul class="expertise d-flex">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Bootstrap</li>
-                                <li>Tailwind CSS</li>
-                                <li>Python</li>
-                                <li>Selenium</li>
-                                <li>Django</li>
-                                <li>Java</li>
-                            </ul>
-                        </div>
-                        <div class="content-items">
-                            <span class="content-title">Ferramentas</span>
-                            <ul class="expertise d-flex">
-                                <li>Canva</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe Lightroom</li>
-                                <li>CorelDRAW</li>
-                                <li>Microsoft Excel</li>
-                                <li>Google Sheets</li>
-                                <li>Meta Ads</li>
-                                <li>Google Ads</li>
-                                <li>Github</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="services" id="services">
-            <div class="container">
-                <div class="title padd-btm-100">
-                    <h1>Serviços</h1>
-                </div>
-                <h6>BYP1LLzAUIvSAPXMRot735cBDPWZ5V2OVMBEtBQDKwxLZCNwSYV7ze5_rTJjCoTzRNClE-brS3bWD5MEN1_vlw</h6>
-                <div class="service-box d-flex justify-space-between">
-                    <div class="service-box-item">
-                        <div class="box-icon">
-                            <i class="fa-light fa-globe fa-beat-fade"></i>
-                        </div>
-                        <div class="service-box-details">
-                            <h5 class="service-title">Desenvolvimento Web</h5>
-                            <p>Aplicações web personalizadas usando tecnologias como HTML, CSS e JavaScript, além de
-                                frameworks como Bootstrap.</p>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="box-icon">
-                            <i class="fab fa-python fa-beat-fade"></i>
-                        </div>
-                        <div class="service-box-details">
-                            <h5 class="service-title">Desenvolvimento de software em Python</h5>
-                            <p>Desenvolvo soluções em Python eficientes e personalizados para diversos fins.</p>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="box-icon">
-                            <i class="fa-brands fa-java fa-beat-fade"></i>
-                        </div>
-                        <div class="service-box-details">
-                            <h5 class="service-title">Desenvolvimento de software em Java</h5>
-                            <p>Programas em Java simples e eficientes para diversas necessidades.</p>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="box-icon">
-                            <i class="fa fa-briefcase fa-beat-fade"></i>
-                        </div>
-                        <div class="service-box-details">
-                            <h5 class="service-title">Análise e Melhorias de Negócios</h5>
-                            <p>Experiência em análise de negócios e administração financeira.</p>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="box-icon">
-                            <i class="fa fa-line-chart fa-beat-fade"></i>
-                        </div>
-                        <div class="service-box-details">
-                            <h5 class="service-title">Marketing Digital</h5>
-                            <p>Realizo o gerenciamento eficaz de campanhas de marketing digital, identificando
-                                pontos-chave e oportunidades estratégicas.</p>
-                        </div>
-                    </div>
-                    <div class="service-box-item">
-                        <div class="box-icon">
-                            <i class="fa fa-paint-brush fa-beat-fade"></i>
-                        </div>
-                        <div class="service-box-details">
-                            <h5 class="service-title">Design Gráfico</h5>
-                            <p>Arte para redes sociais, campanhas e produção gráfica. Design impactante que destaca sua
-                                marca e cativa seu público.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="experience">
-            <div class="container">
-                <div class="title padd-btm-100">
-                    <h1>Trajetória</h1>
-                </div>
-                <ul class="experience-box d-flex">
-                    <li class="d-flex justify-space-between">
-                        <div class="ex-date">
-                            <span>Out, 2020 &minus; Abr, 2023</span>
-                        </div>
-                        <div class="ex-detail">
-                            <h4 class="ex-title">Assistente Administrativo Financeiro</h4>
-                            <p>Fui responsável pelo controle administrativo e financeiro, análise de desempenho e vendas
-                                para identificar melhorias. Também coordenei campanhas de marketing, obtendo um retorno
-                                significativo em faturamento. Além disso, desenvolvi soluções tecnológicas para otimizar
-                                as atividades de outros departamentos.</p>
-                            <span>Hospital de Olhos Macrovisão &minus; Taguatinga, DF</span>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-space-between">
-                        <div class="ex-date">
-                            <span>Mar, 2020 &minus; Jul, 2020</span>
-                        </div>
-                        <div class="ex-detail">
-                            <h4 class="ex-title">Analista de Negócios Júnior</h4>
-                            <p>Contribuí na implementação do sistema AGHUX em hospitais do Ministério da Educação,
-                                sugerindo melhorias para aumentar eficiência e usabilidade. Assegurei comunicação eficaz
-                                entre usuários e equipe de desenvolvimento, identificando e resolvendo problemas no
-                                fluxo de trabalho.</p>
-                            <span>Globalweb Outsourcing do Brasil &minus; Brasília, DF</span>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-space-between">
-                        <div class="ex-date">
-                            <span>Out, 2017 &minus; Jan, 2020</span>
-                        </div>
-                        <div class="ex-detail">
-                            <h4 class="ex-title">Impressor Digital</h4>
-                            <p>Garanti a qualidade dos processos de impressão gráfica digital, operando maquinário
-                                específico e seguindo procedimentos rigorosos. Desenvolvi habilidades na operação das
-                                máquinas, organização do fluxo de trabalho e segurança dos processos. Utilizei
-                                ferramentas como Photoshop e CorelDraw.</p>
-                            <span>Multcor Artes Gráficas &minus; Núcleo Bandeirante, DF</span>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-space-between">
-                        <div class="ex-date">
-                            <span>Nov, 2012 &minus; Jun, 2014</span>
-                        </div>
-                        <div class="ex-detail">
-                            <h4 class="ex-title">Recepcionista de Clínica Médica</h4>
-                            <p>Fui Recepcionista na Neuromaster, atendendo pacientes, agendando consultas e exames, e
-                                auxiliando no gerenciamento de prontuários. Também solicitei autorizações para exames e
-                                procedimentos. Habilidades: atendimento ao público, agendamento e gerenciamento de
-                                prontuários médicos.</p>
-                            <span>Neuromaster &minus; Águas Claras, DF</span>
-                        </div>
-                    </li>
 
-                </ul>
+        <!-- ========== ABOUT ========== -->
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Conheça-me</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-img-wrapper">
+                        <img src="img/sobre.jpg" alt="Pedro Lucas França">
+                        <div class="about-img-badge">
+                            <i class="fa-brands fa-microsoft"></i>
+                            <span>.NET Developer</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <p class="about-lead">
+                            Olá! Sou <strong>Pedro Lucas França</strong>, Desenvolvedor .NET com foco em
+                            <strong>aplicações desktop</strong> e <strong>integração de sistemas financeiros</strong>.
+                        </p>
+                        <p class="about-text">
+                            Atuo com .NET MAUI (C#), WPF e GraphicsView, desenvolvendo integrações para serviços
+                            financeiros e sistemas de backoffice. Aplico arquitetura em camadas, DDD, padrões de projeto
+                            e boas práticas como SOLID e Clean Code. Tenho experiência com WebAPIs RESTful,
+                            microserviços e dados em tempo real via WebSocket.
+                        </p>
+                        <p class="about-text">
+                            Também me interesso por Python, IA/GenAI (LLMs) e automação para acelerar entregas e
+                            elevar a qualidade. Formado em Análise e Desenvolvimento de Sistemas, com pós-graduação
+                            em Inteligência Artificial e Ciência de Dados.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skill-group">
+                                <h4 class="skill-group-title">
+                                    <i class="fa-solid fa-code"></i> Linguagens
+                                </h4>
+                                <ul class="skill-tags">
+                                    <li>C#</li>
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML / CSS</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <h4 class="skill-group-title">
+                                    <i class="fa-solid fa-layer-group"></i> Frameworks
+                                </h4>
+                                <ul class="skill-tags">
+                                    <li>.NET MAUI</li>
+                                    <li>WPF</li>
+                                    <li>ASP.NET Core</li>
+                                    <li>Django</li>
+                                    <li>GraphicsView</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <h4 class="skill-group-title">
+                                    <i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps
+                                </h4>
+                                <ul class="skill-tags">
+                                    <li>Azure</li>
+                                    <li>Docker</li>
+                                    <li>Git / GitHub</li>
+                                </ul>
+                            </div>
+                            <div class="skill-group">
+                                <h4 class="skill-group-title">
+                                    <i class="fa-solid fa-brain"></i> Conceitos
+                                </h4>
+                                <ul class="skill-tags">
+                                    <li>DDD</li>
+                                    <li>SOLID</li>
+                                    <li>Clean Code</li>
+                                    <li>WebSocket</li>
+                                    <li>REST / Microservices</li>
+                                    <li>GenAI / LLM</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- ========== ESPECIALIDADES ========== -->
+        <section class="especialidades" id="especialidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">O que eu faço</span>
+                    <h2 class="section-title">Especialidades</h2>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-brands fa-microsoft"></i>
+                        </div>
+                        <h3 class="card-title">.NET Desktop &amp; MAUI</h3>
+                        <p>Desenvolvimento de aplicações desktop com .NET MAUI, WPF e GraphicsView
+                            para interfaces ricas, responsivas e de alta performance.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <h3 class="card-title">APIs RESTful &amp; Microserviços</h3>
+                        <p>Criação e consumo de WebAPIs RESTful, integração de microserviços
+                            e dados em tempo real via WebSocket.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3 class="card-title">Python &amp; Automação</h3>
+                        <p>Scripts e ferramentas em Python para automação de processos,
+                            extração de dados e integração de sistemas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Integração FinTech</h3>
+                        <p>Integração com serviços financeiros e sistemas de backoffice,
+                            com foco em confiabilidade, segurança e precisão de dados.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="card-title">GenAI &amp; LLM</h3>
+                        <p>Integração de modelos de linguagem (LLMs) e soluções GenAI para
+                            automação inteligente e ganho de produtividade.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-sitemap"></i>
+                        </div>
+                        <h3 class="card-title">Arquitetura de Software</h3>
+                        <p>Aplicação de DDD, SOLID, Clean Code e padrões de projeto para
+                            soluções modulares, escaláveis e de fácil manutenção.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TRAJETÓRIA ========== -->
+        <section class="trajetoria" id="trajetoria">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Histórico profissional</span>
+                    <h2 class="section-title">Trajetória</h2>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">IT Analyst</h3>
+                                    <p class="timeline-company">BTG Pactual &mdash; São Paulo, SP</p>
+                                </div>
+                                <span class="timeline-period">Jun 2025 &ndash; Atual</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Desenvolvimento de aplicações desktop com .NET MAUI (C#), GraphicsView e WPF.
+                                Integração com serviços financeiros e sistemas de backoffice. Consumo e integração
+                                de APIs RESTful, microserviços e dados em tempo real (WebSocket). Aplicação de
+                                arquitetura em camadas, DDD e padrões de projeto.
+                            </p>
+                            <ul class="timeline-tags">
+                                <li>.NET MAUI</li>
+                                <li>C#</li>
+                                <li>WPF</li>
+                                <li>WebSocket</li>
+                                <li>DDD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Desenvolvedor .NET</h3>
+                                    <p class="timeline-company">BTG Pactual &mdash; São Paulo, SP</p>
+                                </div>
+                                <span class="timeline-period">Dez 2023 &ndash; Jun 2025</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Desenvolvimento .NET focado em aplicações desktop e integrações para o ecossistema
+                                de serviços financeiros do BTG Pactual, com modularização de soluções e aplicação
+                                de boas práticas de engenharia de software.
+                            </p>
+                            <ul class="timeline-tags">
+                                <li>.NET</li>
+                                <li>C#</li>
+                                <li>REST API</li>
+                                <li>Clean Code</li>
+                                <li>SOLID</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Analista de Atendimento ao Cliente</h3>
+                                    <p class="timeline-company">Beedoo AI_Learning &mdash; São Paulo, SP</p>
+                                </div>
+                                <span class="timeline-period">Jul 2023 &ndash; Dez 2023</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Suporte técnico em plataforma de aprendizagem com IA, social learning e gamificação.
+                                Atendimento por canais digitais, diagnóstico e troubleshooting. Colaboração com
+                                times de Produto e Engenharia para melhoria contínua da plataforma.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Assistente Administrativo Financeiro</h3>
+                                    <p class="timeline-company">Hospital de Olhos Macrovisão &mdash; Brasília, DF</p>
+                                </div>
+                                <span class="timeline-period">Out 2020 &ndash; Abr 2023</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Rotinas administrativas e financeiras, análise de desempenho e vendas, melhoria de
+                                processos e automação com ferramentas de produtividade. Desenvolvimento de aplicações
+                                web para apoio às operações internas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Analista de Negócios Júnior</h3>
+                                    <p class="timeline-company">Globalweb Corp &mdash; Brasília, DF</p>
+                                </div>
+                                <span class="timeline-period">Mar 2020 &ndash; Jul 2020</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Suporte à implementação de sistema de gestão hospitalar (AGHUX) em hospitais
+                                universitários federais. Levantamento de requisitos, mapeamento de processos,
+                                testes funcionais e homologação.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EDUCAÇÃO ========== -->
+        <section class="educacao" id="educacao">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Formação</span>
+                    <h2 class="section-title">Educação</h2>
+                </div>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <span class="edu-period">2023 &ndash; 2024</span>
+                            <h3>Pós-graduação em IA e Ciência de Dados</h3>
+                            <p>Universidade Anhembi Morumbi</p>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="edu-content">
+                            <span class="edu-period">2020 &ndash; 2022</span>
+                            <h3>Análise e Desenvolvimento de Sistemas</h3>
+                            <p>Estácio &mdash; CST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-badge"><i class="fa-solid fa-certificate"></i> C# (Basic)</div>
+                    <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Python (Basic)</div>
+                    <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Fundamentos em Cibersegurança</div>
+                    <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Gestão de Projetos</div>
+                    <div class="cert-badge"><i class="fa-solid fa-certificate"></i> Desenvolvimento Web com Python e Django</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PORTFÓLIO ========== -->
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <div class="title padd-btm-100">
-                    <h1>Portfólio</h1>
+                <div class="section-header">
+                    <span class="section-label">Projetos públicos no GitHub</span>
+                    <h2 class="section-title">Portfólio</h2>
                 </div>
-                <div class="portfolio-items">
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/1.png" alt="">
-                            <button class="slider-btn"><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>HCSer Consultoria</h4>
-                            <p>Desenvolvimento da logo e site institucional, incluindo copywriting e instalação
-                                Wordpress</p>
-                            <span>Web</span>
-                            <p id="icone-portfolio">
-                                <a href="https://hcserconsultoria.com.br/" target="_blank">
-                                    <i class="fa-thin fa-globe"></i>
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="img/portfolio/5.png" alt="Calculadora de Parcelamento">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/fpedrolucas95/Macrovisao-Parcelamento"
+                                    target="_blank" class="portfolio-link">
+                                    <i class="fa-brands fa-github"></i> Ver no GitHub
                                 </a>
-                            </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card-body">
+                            <span class="portfolio-tag web">Web</span>
+                            <h3>Calculadora de Parcelamento</h3>
+                            <p>Aplicação web para emissão de orçamentos e cálculo de taxas em parcelamentos
+                                para consultores comerciais.</p>
+                            <a href="https://github.com/fpedrolucas95/Macrovisao-Parcelamento"
+                                target="_blank" class="portfolio-github">
+                                <i class="fa-brands fa-github"></i>
+                                fpedrolucas95/Macrovisao-Parcelamento
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/2.png" alt="">
-                            <button class="slider-btn"><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>HCSer Consultoria</h4>
-                            <p>Desenvolvimento de Landing Page e copywriting.</p>
-                            <span>Web</span>
-                            <p id="icone-portfolio">
-                                <a href="https://lp.hcserconsultoria.com.br/consultoriaexpress/" target="_blank">
-                                    <i class="fa-thin fa-globe"></i>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="img/portfolio/8.png" alt="Editor de Texto Online">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/fpedrolucas95/Editor-de-Texto-Online"
+                                    target="_blank" class="portfolio-link">
+                                    <i class="fa-brands fa-github"></i> Ver no GitHub
                                 </a>
-                            </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card-body">
+                            <span class="portfolio-tag web">Web</span>
+                            <h3>Editor de Texto Online</h3>
+                            <p>Editor de texto online simples e funcional para edição e salvamento de
+                                arquivos de texto diretamente no browser.</p>
+                            <a href="https://github.com/fpedrolucas95/Editor-de-Texto-Online"
+                                target="_blank" class="portfolio-github">
+                                <i class="fa-brands fa-github"></i>
+                                fpedrolucas95/Editor-de-Texto-Online
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/3.png" alt="">
-                            <button class="slider-btn"><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>Fasciani Serviços Médicos</h4>
-                            <p>Desenvolvimento de logo, desenvolvimento de material publicitário, criação de perfil nas
-                                redes sociais, criação de posts (arte e texto).</p>
-                            <span>Social Midia</span>
-                            <p id="icone-portfolio">
-                                <a href="https://instagram.com/fasciani.med" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="img/portfolio/6.png" alt="Editor de Texto Desktop">
+                            <div class="portfolio-overlay">
+                                <a href="https://github.com/fpedrolucas95/Editor-de-Texto"
+                                    target="_blank" class="portfolio-link">
+                                    <i class="fa-brands fa-github"></i> Ver no GitHub
                                 </a>
-                            </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card-body">
+                            <span class="portfolio-tag java">Java</span>
+                            <h3>Editor de Texto Desktop</h3>
+                            <p>Editor de texto desktop inspirado no Notepad do Windows, desenvolvido
+                                em Java com interface limpa e leve.</p>
+                            <a href="https://github.com/fpedrolucas95/Editor-de-Texto"
+                                target="_blank" class="portfolio-github">
+                                <i class="fa-brands fa-github"></i>
+                                fpedrolucas95/Editor-de-Texto
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/4.png" alt="">
-                            <button class="slider-btn"><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>Cardiologia Brasília</h4>
-                            <p>Criação de material publicitário, como apresentação comercial e post para as redes
-                                sociais.</p>
-                            <span>Design Gráfico</span>
-                            <p id="icone-portfolio">
-                                <a href="https://instagram.com/cardiologiabrasilia" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/5.png" alt="">
-                            <button class="slider-btn"><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>Hospital de Olhos Macrovisão</h4>
-                            <p>Desenvolvimento de uma aplicação web para auxiliar o consultor comercial a emitir
-                                orçamento e calcular taxas em parcelamento.</p>
-                            <span>Web</span>
-                            <p id="icone-portfolio">
-                                <a href="https://github.com/fpedrolucas95/Macrovisao-Parcelamento" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/6.png" alt="">
-                            <button class="slider-btn" disabled><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>Editor de Texto</h4>
-                            <p>Editor de texto simples, inspirado pelo antigo notepad do Windows.</p>
-                            <span>Java</span>
-                            <p id="icone-portfolio">
-                                <a href="https://github.com/fpedrolucas95/Editor-de-Texto" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/7.png" alt="">
-                            <button class="slider-btn" disabled><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>Busca de Empresas com API do Google</h4>
-                            <p>Extração de dados de empresas locais do Google Places para um arquivo csv.</p>
-                            <span>Python</span>
-                            <p id="icone-portfolio">
+
+                    <div class="portfolio-card">
+                        <div class="portfolio-card-img">
+                            <img src="img/portfolio/7.png" alt="Busca de Empresas Google Places">
+                            <div class="portfolio-overlay">
                                 <a href="https://github.com/fpedrolucas95/Busca-de-Empresas-no-Google-Places"
-                                    target="_blank">
-                                    <i class="fa-brands fa-github"></i>
+                                    target="_blank" class="portfolio-link">
+                                    <i class="fa-brands fa-github"></i> Ver no GitHub
                                 </a>
-                            </p>
+                            </div>
+                        </div>
+                        <div class="portfolio-card-body">
+                            <span class="portfolio-tag python">Python</span>
+                            <h3>Busca de Empresas com Google Places</h3>
+                            <p>Extração automatizada de dados de empresas locais via Google Places API
+                                com exportação para arquivo CSV.</p>
+                            <a href="https://github.com/fpedrolucas95/Busca-de-Empresas-no-Google-Places"
+                                target="_blank" class="portfolio-github">
+                                <i class="fa-brands fa-github"></i>
+                                fpedrolucas95/Busca-de-Empresas-no-Google-Places
+                            </a>
                         </div>
                     </div>
-                    <div class="portfolio-box">
-                        <div class="portfolio-img">
-                            <img src="img/portfolio/8.png" alt="">
-                            <button class="slider-btn"><i class="fa-regular fa-plus"></i></button>
-                        </div>
-                        <div class="portfolio-details">
-                            <h4>Editor de Texto Online</h4>
-                            <p>O Editor de Texto Online é uma ferramenta simples e fácil de usar para edição de arquivos
-                                de texto.</p>
-                            <span>Web</span>
-                            <p id="icone-portfolio">
-                                <a href="https://github.com/fpedrolucas95/Editor-de-Texto-Online" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
-        <section class="contact" id="contact">
+
+        <!-- ========== CONTATO ========== -->
+        <section class="contato" id="contato">
             <div class="container">
-                <div class="title padd-btm-100">
-                    <h1>Contato</h1>
-                    <h3>Vamos criar algo incrível juntos!</h3>
+                <div class="section-header">
+                    <span class="section-label">Fale comigo</span>
+                    <h2 class="section-title">Contato</h2>
+                    <p class="section-sub">Vamos criar algo incrível juntos!</p>
                 </div>
                 <form id="contact-form" action="https://formspree.io/f/mlekkovq" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(61) 9 8363-7591">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Sobre o que é?" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Telefone:</label>
-                        <input type="tel" id="phone" name="phone" required>
+                    <div class="form-group full">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Escreva sua mensagem..." required></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="subject">Assunto:</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar</button>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Enviar Mensagem <i class="fa-solid fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
         </section>
-        <footer id="footer" class="footer_area">
-            <div class="container">
-                <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
-                    <p class="credit">Desenvolvido por Pedro Lucas França.<br>© 2023, Todos os direitos reservados.</p>
-                </div> <!-- footer wrapper -->
-            </div> <!-- container -->
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p class="footer-credit">
+                    Desenvolvido por Pedro Lucas França &mdash; &copy; 2025. Todos os direitos reservados.
+                </p>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/fpedrolucas95" target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/fpedrolucas95" target="_blank"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:fpedrolucas95@gmail.com" aria-label="E-mail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
+
     </main>
-    <div class="lightbox">
+
+    <!-- ========== LIGHTBOX ========== -->
+    <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
-            <div class="lightbox-close">&times;</div>
-            <img src="img/portfolio/1.png" class="lightbox-img">
+            <div class="lightbox-close" id="lightbox-close">&times;</div>
+            <img src="" class="lightbox-img" id="lightbox-img" alt="">
         </div>
         <div class="lightbox-controls">
-            <div class="prev-item" onclick="prevItem()"><i class="fa-regular fa-angle-left"></i></div>
-            <div class="prev-item" onclick="nextItem()"><i class="fa-regular fa-angle-right"></i></div>
+            <button class="lightbox-prev" onclick="prevItem()" aria-label="Anterior">
+                <i class="fa-regular fa-angle-left"></i>
+            </button>
+            <button class="lightbox-next" onclick="nextItem()" aria-label="Próximo">
+                <i class="fa-regular fa-angle-right"></i>
+            </button>
         </div>
     </div>
-    <button id="btnTopo" class="btn-topo"><i class="fa fa-arrow-up"></i></button>
-    <a href="https://api.whatsapp.com/send?phone=5561983637591&text=Oi,%20cheguei%20aqui%20pelo%20site" target="_blank"
-        id="btnWhatsapp" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <!-- Back to top -->
+    <button id="btnTopo" class="btn-topo" aria-label="Voltar ao topo">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5561983637591&text=Oi,%20cheguei%20aqui%20pelo%20site"
+        target="_blank" id="btnWhatsapp" class="btn-whatsapp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>
